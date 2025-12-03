@@ -1,5 +1,5 @@
 # Store Azure OpenAI Secrets in KeyVault for Microsoft Fabric Notebooks
-
+# Version : Loy Sikdar
 Microsoft Fabric does not support Entra ID authentication to Azure OpenAI resources within a Fabric Notebook. Users must use key-based authentication. To do so securely, Azure OpenAI keys must be stored in Azure KeyVault and accessed using the Service Principal for the current user. Eventually this will include the Fabric Workspace Identity.
 
 This repository deploys an Azure KeyVault via [Azure Developer CLI (azd)](https://learn.microsoft.com/azure/developer/azure-developer-cli/) for use with Microsoft Fabric Notebooks and Workspace Identity. The template creates an Azure OpenAI account with the latest models and stores its secrets in the KeyVault for secure access from Fabric Notebooks.
